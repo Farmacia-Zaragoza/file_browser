@@ -1,0 +1,26 @@
+@import 'variable';
+
+// header css start
+#header{
+    max-height: 100px;
+    background-color:$background-color;
+    border-bottom: 1px solid $border-color;
+    position: fixed;
+    width: 100%;
+    z-index: 1011;
+    a.logo{
+        width: 230px;
+        max-height: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        color: $logo-color;
+        float: left;
+        font-family: $logo-font;
+        font-weight: 800;
+        border-right: 1px solid $border-color;
+    }
+
+}
+// header css end

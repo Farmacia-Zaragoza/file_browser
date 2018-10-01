@@ -1,0 +1,303 @@
+/* File manager all css structure
+*** reset all browser setting
+*** scss file structure
+
+*** (1):- PAGE AND BROWSER RESET
+*** (2):- fixed header section, top of the pages left-logo, right-wiged etc...
+*** (3):- fixed sidebar menu section left-side of hte page, tree menu (dropdown-menu)...
+*** (4):- main section of the page, slide-menu, display file etc...
+*** (5):- horizontal-slide-menu top of the "main-section?
+*** (6):- horizontal working button (Horizontal Tool Box) bottom of the                              horizontal-slide-menu
+*** (7):- main content pan. in this sections all files, folders etc will have.
+*** (8):- list view design page design in main conent pan. 
+*** (9):- Grid view design page design in main conent pan. 
+*/
+/*PAGE RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body * {
+  line-height: 140%;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: 500; }
+
+i, em {
+  font-style: italic; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:hover {
+  text-decoration: none; }
+
+input[type=text],
+input[type=submit],
+input[type=image],
+input[type=password],
+input[type=email],
+button,
+textarea {
+  -webkit-appearance: none; }
+
+textarea,
+button,
+input[type=password],
+input[type=email],
+input[type=submit],
+input[type=text] {
+  font-family: 'Alegreya', serif; }
+
+a:focus {
+  text-decoration: none; }
+
+textarea:focus,
+button:focus,
+a:focus,
+input:focus {
+  outline: none; }
+
+a:hover {
+  color: #000000; }
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1rem;
+  -webkit-text-size-adjust: 100%;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000; }
+
+#header {
+  max-height: 100px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 1011; }
+  #header a.logo {
+    width: 230px;
+    max-height: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: #000000;
+    float: left;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 800;
+    border-right: 1px solid #000000; }
+
+#main-section-area {
+  padding-top: 50px; }
+
+.horizontal-menu-bg {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #000000; }
+
+.content-wrapper {
+  position: relative; }
+  .content-wrapper .horizontal-menu {
+    position: relative; }
+    .content-wrapper .horizontal-menu i {
+      display: inline-block;
+      font-size: 1.5rem;
+      height: 140px;
+      line-height: 140px; }
+    .content-wrapper .horizontal-menu i.left-arrow {
+      margin-right: 10px;
+      cursor: pointer; }
+    .content-wrapper .horizontal-menu i.right-arrow {
+      margin-left: 10px;
+      cursor: pointer; }
+    .content-wrapper .horizontal-menu .menu-container {
+      float: left;
+      position: relative;
+      padding: .5rem 0rem; }
+      .content-wrapper .horizontal-menu .menu-container ul.menu-inner-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; }
+        .content-wrapper .horizontal-menu .menu-container ul.menu-inner-container li {
+          display: inline-block;
+          float: none;
+          border-left: 1px solid #FFFFFF;
+          border-right: 1px solid #e8e8e8; }
+          .content-wrapper .horizontal-menu .menu-container ul.menu-inner-container li a {
+            text-transform: capitalize;
+            font-size: 1rem;
+            padding: 0rem 1rem;
+            display: inline-block; }
+            .content-wrapper .horizontal-menu .menu-container ul.menu-inner-container li a span i {
+              height: 100%;
+              line-height: 100%;
+              font-size: 5rem;
+              margin-right: .4rem;
+              color: #EEAE4A; }
+            .content-wrapper .horizontal-menu .menu-container ul.menu-inner-container li a span.items {
+              font-size: .75rem;
+              color: #000000; }
+
+.horizontal-tool-box-wrapper {
+  position: relative;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #000000; }
+  .horizontal-tool-box-wrapper .horizontal-tool-box {
+    position: relative; }
+    .horizontal-tool-box-wrapper .horizontal-tool-box i {
+      display: inline-block;
+      font-size: 1.5rem;
+      height: 38px;
+      line-height: 38px; }
+    .horizontal-tool-box-wrapper .horizontal-tool-box i.left-arrow {
+      margin-right: 10px;
+      cursor: pointer; }
+    .horizontal-tool-box-wrapper .horizontal-tool-box i.right-arrow {
+      margin-left: 10px;
+      cursor: pointer; }
+    .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container {
+      float: left;
+      position: relative;
+      padding: .5rem 0rem; }
+      .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container ul.inner-horizontal-tool-box {
+        overflow: hidden;
+        white-space: nowrap; }
+        .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container ul.inner-horizontal-tool-box li {
+          display: inline;
+          float: none; }
+          .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container ul.inner-horizontal-tool-box li a {
+            display: inline-block;
+            padding: 0rem .5rem;
+            text-transform: capitalize;
+            font-size: 1rem; }
+            .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container ul.inner-horizontal-tool-box li a span i {
+              height: 100%;
+              line-height: 100%;
+              font-size: .75rem;
+              margin-right: .4rem; }
+            .horizontal-tool-box-wrapper .horizontal-tool-box .tool-box-container ul.inner-horizontal-tool-box li a:hover {
+              color: #000000;
+              background-color: #F1F3F4; }
+
+.main-content-pan-wrapper {
+  background-color: #F5F5F5;
+  margin: 15px;
+  height: calc(70vh + 0px);
+  overflow: auto;
+  position: relative;
+  object-fit: cover; }
+
+.divTable {
+  display: table;
+  width: 100%; }
+
+.divTableRow {
+  display: table-row; }
+
+.divTableRow:hover {
+  background-color: #fff; }
+
+.table-headding {
+  height: 50px; }
+
+.table-headding {
+  font-weight: 800; }
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group; }
+
+.divTableCell {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 3px 10px;
+  vertical-align: middle; }
+
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold; }
+
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold; }
+
+.divTableBody {
+  display: table-row-group; }
+
+.divTableCell span i.fa-folder {
+  margin-right: .50rem; }
+
+.list-view-mode {
+  display: table-row; }
+
+.divTableRow.grid-view-mode {
+  display: grid !important;
+  border: 1px solid #fff;
+  margin: 1rem;
+  box-shadow: 0px 2px 7px 1px #ddd;
+  padding: 1rem;
+  cursor: pointer; }
+
+.table-headding.grid-view-mode {
+  display: none !important; }
+
+.grid-view-mode {
+  width: 22% !important;
+  float: left; }
+  .grid-view-mode .divTableCell {
+    border: 0px !important; }
+    .grid-view-mode .divTableCell span {
+      display: block; }
+      .grid-view-mode .divTableCell span i.fa-folder {
+        font-size: 5rem;
+        color: #EEAE4A; }
+
+/*# sourceMappingURL=main.css.map */

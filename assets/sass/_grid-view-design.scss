@@ -1,0 +1,30 @@
+@import 'variable';
+
+
+.divTableRow.grid-view-mode{
+    display: grid !important;
+    border: 1px solid #fff;
+    margin: 1rem;
+    box-shadow: 0px 2px 7px 1px #ddd;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+.table-headding.grid-view-mode{
+    display: none !important;
+}
+.grid-view-mode {
+    width: 22% !important;
+    float: left;
+    .divTableCell{
+        border:0px !important;
+        span{
+            display: block;
+            i.fa-folder{
+                font-size: 5rem;
+                color: $folder-color;
+            }
+        }
+    }
+}

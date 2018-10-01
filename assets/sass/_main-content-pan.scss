@@ -1,0 +1,10 @@
+@import 'variable';
+
+.main-content-pan-wrapper{
+    background-color:$background-color;
+    margin: 15px;
+    height: calc(70vh + 0px);
+    overflow: auto;
+    position: relative;
+    object-fit: cover;
+}

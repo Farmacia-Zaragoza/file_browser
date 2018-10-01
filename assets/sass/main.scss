@@ -1,0 +1,23 @@
+/* File manager all css structure
+*** reset all browser setting
+*** scss file structure
+
+*** (1):- PAGE AND BROWSER RESET
+*** (2):- fixed header section, top of the pages left-logo, right-wiged etc...
+*** (3):- fixed sidebar menu section left-side of hte page, tree menu (dropdown-menu)...
+*** (4):- main section of the page, slide-menu, display file etc...
+*** (5):- horizontal-slide-menu top of the "main-section?
+*** (6):- horizontal working button (Horizontal Tool Box) bottom of the                              horizontal-slide-menu
+*** (7):- main content pan. in this sections all files, folders etc will have.
+*** (8):- list view design page design in main conent pan. 
+*** (9):- Grid view design page design in main conent pan. 
+*/
+@import 'resetbrowser';
+@import 'header';
+// @import 'sidebar';
+@import 'main-section';
+@import 'horizontal-slide-menu';
+@import 'horizontal-tool-box';
+@import 'main-content-pan';
+@import 'list-view-design';
+@import 'grid-view-design';

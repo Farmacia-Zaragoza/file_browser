@@ -1,0 +1,64 @@
+
+@import 'variable';
+
+// sidebar design 
+#left-sidebar{
+    background-color: $background-color;
+    width: 230px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 50px;
+    height: 100%;
+    border-right: 1px solid $border-color;
+    div.form-group{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #000000 !important;
+            outline: 0;
+            box-shadow:none !important;
+        }
+    }
+    .well{
+        height: calc(100% - 50px);
+        overflow-y: scroll;
+        overflow-x: auto;
+    }
+    ul.sidebar-tree-menu{
+        margin-left: 10px;
+        li{
+            position: relative;
+            a{
+                text-transform: capitalize;
+                font-size: .75rem;
+                margin: 0px;
+                border-top: 1px solid #FFFFFF;
+                border-bottom: 1px solid #e8e8e8;
+                display: block;
+                line-height: 42px;
+                padding: 0 8px;
+                font-weight: 600;
+                position: relative;
+                left: 0px;
+                span i{
+                    margin-right: 5px;
+                    color: $folder-color;
+                }
+                &:hover{
+                    background-color: $icon-hover-background-color;
+                    color: $icon-color;
+                    left: 5px;
+                    transition: all .5s;
+                }
+            }
+            ul.sub-file-name{
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+

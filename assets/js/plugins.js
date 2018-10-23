@@ -23,7 +23,7 @@
 
   // jquery contect menu plugins start Here
   $.contextMenu({
-    selector: '.view-file-maneger-wrapper', 
+    selector: '.divTableRow', 
     callback: function(key, options) {
         var m = "clicked: " + key;
         window.console && console.log(m) || alert(m); 

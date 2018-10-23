@@ -1,0 +1,30 @@
+folders:
+- 0041x0031
+- 0082x0062
+- 0145x0109
+- 0320x0240
+- 0384x0288
+- 0442x0332
+- 0640x0480
+- 0884x0663
+- 1024x0768
+- 1280x0960
+- 2048x1536
+- 2560x1920
+- 3264x2448
+- 4608x3456
+- 5184x3888
+- 6100x3050
+files:
+- {name: 2005, type: Folder}
+- {name: 2006, type: Folder}
+- {name: 2007, type: Folder}
+- {name: 2008, type: Folder}
+- {name: 2009, type: Folder}
+- {name: 2010, type: Folder}
+- {name: 2011, type: Folder}
+- {name: 2012, type: Folder}
+- {name: 2013, type: Folder}
+- {name: 2014, type: Folder}
+- {name: 2015, type: Folder}
+- {name: 2016, type: Folder}

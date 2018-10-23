@@ -21,8 +21,13 @@
         border:0px !important;
         span{
             display: block;
-            i.fa-folder{
+            i{
                 font-size: 5rem;
+            }
+            i.fa-folder{
+                color: $folder-color;
+            }
+            i.fa-file{
                 color: $folder-color;
             }
         }

@@ -1,7 +1,8 @@
 console.log("working with json data");
 var reloadJsonData = document.getElementById('reload-json-data');
-var folderName = document.getElementById('folderName');
-reloadJsonData.addEventListener('click', function(){
+// var folderName = document.getElementById('folderName');
+
+window.onload = function(){
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'http://browser.vbrqx.com/dev/example.json');
     ourRequest.responseType = 'json';
@@ -12,7 +13,7 @@ reloadJsonData.addEventListener('click', function(){
         getFolderName(folderData.folders);
     };
     ourRequest.send();
-});
+};
 
 // render only folder name function
 //---------------------------------

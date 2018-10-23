@@ -36,13 +36,13 @@ $(document).ready(function(){
 			$(this).attr("id", id);
 			//total width of horizontal menu with 2 arrow.
 			let horizontalMenuWidth = $(this).width();
-			console.log("horizontal-menu : "+horizontalMenuWidth);
+			// console.log("horizontal-menu : "+horizontalMenuWidth);
 			// width of the arrow
 			let horizontalMenuArrowWidth = $(this).children('i').outerWidth(true);
-			console.log(horizontalMenuArrowWidth);
+			// console.log(horizontalMenuArrowWidth);
 			// total-width - 2 arrow-width = menu-container width;
 			let mainContainerWidth = horizontalMenuWidth - (horizontalMenuArrowWidth*2);
-			console.log(mainContainerWidth);
+			// console.log(mainContainerWidth);
 			$(this).children('.menu-container').css('width', mainContainerWidth);	
 		});
 	}
@@ -64,15 +64,15 @@ $(document).ready(function(){
 
 		// need to find total width of "menu-inner-container" class
 		let horizontalMenuScrollableWidth = $("#"+horizontalMenuParentID+" >.menu-container>.menu-inner-container")[0].scrollWidth;
-		console.log(horizontalMenuScrollableWidth);
+		// console.log(horizontalMenuScrollableWidth);
 
 		//need to find out visible width of "menu-inner-container" class
 		let menuInnerContainerWidth = $("#"+horizontalMenuParentID+" >.menu-container>.menu-inner-container").width();
-		console.log(menuInnerContainerWidth);
+		// console.log(menuInnerContainerWidth);
 
 		//this is the value of total scrolable area of horizontal menu
 		let horizontalMenuScroll = horizontalMenuScrollableWidth - menuInnerContainerWidth;
-		console.log(horizontalMenuScroll);
+		// console.log(horizontalMenuScroll);
 
 		//now we need to make a scroll left of "total scrolable area"
 		let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.menu-container>.menu-inner-container").scrollLeft();
@@ -107,13 +107,13 @@ $(document).ready(function(){
 			$(this).attr("id", id);
 			//total width of horizontal menu with 2 arrow.
 			let horizontalMenuWidth = $(this).width();
-			console.log("tool box : "+ horizontalMenuWidth);
+			// console.log("tool box : "+ horizontalMenuWidth);
 			// width of the arrow
 			let horizontalMenuArrowWidth = $(this).children('i').outerWidth(true);
-			console.log(horizontalMenuArrowWidth);
+			// console.log(horizontalMenuArrowWidth);
 			// total-width - 2 arrow-width = menu-container width;
 			let mainContainerWidth = horizontalMenuWidth - (horizontalMenuArrowWidth*2);
-			console.log(mainContainerWidth);
+			// console.log(mainContainerWidth);
 			$(this).children('.tool-box-container').css('width', mainContainerWidth);	
 		});
 	}
@@ -129,15 +129,15 @@ $(document).ready(function(){
 
 		// need to find total width of "menu-inner-container" class
 		let horizontalMenuScrollableWidth = $("#"+horizontalMenuParentID+" >.tool-box-container>.inner-horizontal-tool-box")[0].scrollWidth;
-		console.log(horizontalMenuScrollableWidth);
+		// console.log(horizontalMenuScrollableWidth);
 
 		//need to find out visible width of "menu-inner-container" class
 		let menuInnerContainerWidth = $("#"+horizontalMenuParentID+" >.tool-box-container>.inner-horizontal-tool-box").width();
-		console.log(menuInnerContainerWidth);
+		// console.log(menuInnerContainerWidth);
 
 		//this is the value of total scrolable area of horizontal menu
 		let horizontalMenuScroll = horizontalMenuScrollableWidth - menuInnerContainerWidth;
-		console.log(horizontalMenuScroll);
+		// console.log(horizontalMenuScroll);
 
 		//now we need to make a scroll left of "total scrolable area"
 		let scrollableMenu = horizontalMenuScroll - $("#"+horizontalMenuParentID+" >.tool-box-container>.inner-horizontal-tool-box").scrollLeft();
@@ -169,17 +169,17 @@ $(document).ready(function(){
 		$('ul.tool-box > li').click(function(e){
 			e.preventDefault();
 			if(this.id == 'gride-view'){
-				console.log('gride-view clicked..!');
+				// console.log('gride-view clicked..!');
 				$('.divTableRow').addClass('grid-view-mode').removeClass('list-view-mode');
 
 			} else if(this.id == 'list-view'){
-				console.log('list-view clicked..!');
+				// console.log('list-view clicked..!');
 				$('.divTableRow').addClass('list-view-mode').removeClass('grid-view-mode');
 			}
 			
 		});
 	}
-	
+
 	fileView();
 
 });

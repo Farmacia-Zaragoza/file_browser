@@ -1,6 +1,7 @@
 console.log("working with json data");
 var reloadJsonData = document.getElementById('reload-json-data');
-// var folderName = document.getElementById('folderName');
+var folderName = document.getElementById('folderName');
+var filesName = document.getElementById('filesName');
 
 window.onload = function(){
     var ourRequest = new XMLHttpRequest();
@@ -10,7 +11,11 @@ window.onload = function(){
         var folderData = this.response;
         
         console.log(folderData.folders);
+        console.log(folderData.files[0]);
+        // init functions for getting folder name
+        //----------------------------------------
         getFolderName(folderData.folders);
+        getFilesName(folderData.files);
     };
     ourRequest.send();
 };
@@ -19,7 +24,7 @@ window.onload = function(){
 //---------------------------------
 
 function getFolderName(foldername){
-    var name = "";
+    let name = "";
     for(let i=0; i<=foldername.length; i++){
         name+= "<li>" + 
                     "<a href='#'>"+ 
@@ -31,8 +36,33 @@ function getFolderName(foldername){
                         "</p>" + 
                     "</a>" + 
                 "</li>";
-    }
+    };
     folderName.insertAdjacentHTML('afterbegin', name);
-    console.log(name);
+    // console.log(name);
+};
+
+
+// render only files name from json file
+// --------------------------------------
+
+function getFilesName(filesname){
+    let nameOfFile = "";
+    console.log(filesname);
+    for(let i=0; i<filesname.length; i++){
+        // console.log(filesname[i].name);
+        nameOfFile+="<div class='divTableRow'>"+
+                            "<div class='divTableCell'>"+
+                                "<span>"+
+                                    "<i class='fas fa-folder'></i>"+
+                                    filesname[i].name+
+                                "</span>"+
+                            "</div>"+
+                    "</div>";
+    
+        // 
+    };
+
+    filesName.insertAdjacentHTML('afterbegin', nameOfFile);
+    console.log(nameOfFile);
 }
 

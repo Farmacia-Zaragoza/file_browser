@@ -57,12 +57,16 @@ function getFilesName(filesname){
                                     filesname[i].name+
                                 "</span>"+
                             "</div>"+
+                            "<div class='divTableCell'>"+
+                                    filesname[i].type+
+                            "</div>"+
                     "</div>";
     
         // 
     };
 
-    filesName.insertAdjacentHTML('afterbegin', nameOfFile);
+    filesName.insertAdjacentHTML('afterend', nameOfFile);
     console.log(nameOfFile);
 }
+
 
